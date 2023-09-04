@@ -1,0 +1,31 @@
+version: 4
+
+models:
+  - name: fact_boarding_passes
+    description: "dba class project"
+    columns:
+      - name: ticket_no
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+models:
+  - name: fact_flights
+    description: "dba class project"
+    columns:
+      - name: filght_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+models:
+  - name: fact_tickets
+    description: "dba class project"
+    columns:
+      - name: ticket_no
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
